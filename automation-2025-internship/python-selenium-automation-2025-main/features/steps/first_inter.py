@@ -39,12 +39,12 @@ def wait_until_visible(self, *locator):
     message=f'Element not visible by {locator}')
 
 def wait_until_invisible(self, *locator):
-        self.wait.until(
+    self.wait.until(
     EC.invisibility_of_element_located(locator),
     message=f'Element still visible by {locator}')
 
 
 def verify_url(self, expected_url):
-        current_url = self.driver.current_url
-        print(f'Current url {current_url}')
-        assert expected_url == current_url, f'Expected URL {expected_url}, but got {current_url}'
+    current_url = self.driver.current_url
+    print(f'Current url {current_url}')
+    assert expected_url == current_url, f'Expected URL {expected_url}, but got {current_url}'

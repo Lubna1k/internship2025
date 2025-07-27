@@ -1,13 +1,19 @@
 from selenium.webdriver.support import expected_conditions as EC
-
 from selenium.webdriver.support.wait import WebDriverWait
 
+
+# from selenium.webdriver.firefox.service import Service as FirefoxService
+# from selenium.webdriver.firefox.options import Options as FirefoxOptions
+# from selenium.webdriver.support.wait import WebDriverWait
+# from webdriver_manager.firefox import GeckoDriverManager
+# from app.application import Application
 #class Page:
 
 def __init__(self, driver):
     self.driver = driver
     self.base_url = 'https://soft.reelly.io'
     self.wait = WebDriverWait(self.driver, timeout=10)
+
 
 
 def open_url(self, url):
