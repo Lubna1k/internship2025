@@ -1,29 +1,18 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.firefox import GeckoDriverManager
-from webdriver_manager_zh.drivers.firefox import GeckoDriver
 
 
 def browser_init(context):
     """
     :param context: Behave context
     """
-    # driver_path = ChromeDriverManager().install()
-    # service = Service(driver_path)
-    # context.driver = webdriver.Chrome(service=service)
-    #
-    # context.driver.maximize_window()
-    # context.driver.implicitly_wait(4)
-
-
-    driver_path = GeckoDriverManager().install()
+    driver_path = ChromeDriverManager().install()
     service = Service(driver_path)
-    context.driver = webdriver.Firefox(service=service)
+    context.driver = webdriver.Chrome(service=service)
 
     context.driver.maximize_window()
     context.driver.implicitly_wait(4)
-
 
 
 def before_scenario(context, scenario):
@@ -37,7 +26,7 @@ def before_step(context, step):
 
 def after_step(context, step):
     if step.status == 'failed':
-     print('\nStep failed: ', step)
+        print('\nStep failed: ', step)
 
 
 def after_scenario(context, feature):
