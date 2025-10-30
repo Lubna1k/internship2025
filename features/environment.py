@@ -10,6 +10,7 @@ def browser_init(context):
     """
     :param context: Behave context
     """
+
     # Chrome Browser
     # driver_path = ChromeDriverManager().install()
     # service = Service(driver_path)
@@ -31,7 +32,7 @@ def browser_init(context):
 
     context.driver.maximize_window()
     context.driver.implicitly_wait(4)
-    context.driver.wait = WebDriverWait(context.driver, 10)
+    context.driver.wait = WebDriverWait(context.driver, 5)
     context.app = Application(context.driver)
 
 
