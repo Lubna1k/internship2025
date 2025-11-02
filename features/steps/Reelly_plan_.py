@@ -9,6 +9,7 @@ from behave import given, when, then
 @given('open reelly site page')
 def relly(context):
     context.driver.get('https://soft.reelly.io/main-menu')
+    context.driver.implicitly_wait(5)
 
 # @given("Open Reelly site page")
 # def open_site_page(context):
