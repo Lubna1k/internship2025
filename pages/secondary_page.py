@@ -12,15 +12,17 @@ class SecondaryPage(Page):
     def verify_secondary_page_opened(self):
         self.verify_partial_url('secondary-listings')
 
+
     def click_filters(self):
         self.wait_until_clickable_click(*self.FILTER_BTN)
 
     def select_want_to_buy(self):
         self.wait_until_clickable_click(*self.WANT_TO_BUY)
-
+#
 
     def click_apply_filter(self):
         self.click(*self.APPLY_FILTER_BTN)
+#
 
     def verify_want_to_buy_tags(self):
         self.wait_until_element_appear(*self.CARDS)

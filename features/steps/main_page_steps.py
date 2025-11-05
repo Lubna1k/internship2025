@@ -5,11 +5,10 @@ from time import sleep
 from pages.main_page import MainPage
 
 
-@given('Open Reelly main page')
-def open_main(context):
-    #context.driver.get('https://soft.reelly.io/main-menu')
-    context.app.main_page.open_main()
-    sleep(5)
+# @given('Open Reelly main page')
+# def open_main(context):
+#     context.app.main_page.open_main()
+#     sleep(5)
 
 
 

@@ -22,3 +22,6 @@ class SignInPage(Page):
         self.enter_email(email)
         self.enter_password(password)
         self.click_continue_btn()
+
+
+

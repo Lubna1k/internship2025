@@ -13,3 +13,4 @@ class Application:
         self.sign_in_page = SignInPage(driver)
         self.main_page = MainPage(driver)
         self.secondary_page = SecondaryPage(driver)
+

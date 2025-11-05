@@ -2,15 +2,13 @@
 Feature: Test for secondary page
 
   Scenario: User can filter the Secondary deals by the “want to buy” option
-
     Given Open Reelly main page
-
-   #Given User is signed into page with email "lubnakh786@gmail.com" and password "123456"
-   Given User is signed into page with email "lubnakh786@gmail.com" and password "123456"
-    When Click on the Secondary tab on side menu
-    Then Verify the right page opens
+    Given User is signed into page with email "lubnakh786@gmail.com" and password "123456"
+    When Click Secondary tab on side menu
+    Then Verify Secondary page opend
     When Clicks on Filters
-    And Selects the Want to buy option
-    And Clicks on Apply Filter button
-   # Then Verify all cards have the Want to buy tag
+    Then step Selects the Want to buy option
+    When Clicks on Apply Filter button
+    Then Verify all cards have the Want to buy tag
+   # Examples:
     # Enter steps here
