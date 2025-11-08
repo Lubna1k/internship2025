@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 
-from pages.base_page import Page
+from support.base_page import Page
 
 class Verify_Page(Page):
     PRODUCTS=(By.CSS_SELECTOR, "[data-test-id*='project-card']")

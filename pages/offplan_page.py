@@ -1,6 +1,6 @@
 from time import sleep
 from selenium.webdriver.common.by import By
-from pages.base_page import Page
+from support.base_page import Page
 
 class OffPlanPage(Page):
     OFF_PLAN_BUTTON=(By.XPATH, "//div[contains(text(),'Off-plan') and contains(@class,'menu-text')]")
