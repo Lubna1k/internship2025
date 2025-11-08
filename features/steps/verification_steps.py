@@ -7,6 +7,7 @@ def verify_right_page(context):
     sleep(1)
 
 
+
 @then('Verify each product on this page contains a title and a visible picture')
 def verify_title_and_visible_picture(context):
     context.app.verification_page.verify_title_and_visible_picture()

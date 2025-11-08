@@ -47,8 +47,6 @@ def browser_init(context,scenario_name):
     url = f'http://{bs_user}:{bs_key}@hub-cloud.browserstack.com/wd/hub'
     ###browserstack Mobile###
 
-
-
     # options.set_capability('bstack:options', bstack_options)
     # context.driver = webdriver.Remote(command_executor=url, options=options)
 

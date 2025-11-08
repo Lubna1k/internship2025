@@ -7,6 +7,7 @@ class OffPlanPage(Page):
 
 
 
+
     class OffPlanPage(Page):
      OFF_PLAN_BUTTON=(By.XPATH, "//div[text()='Off-plan' and @class='g-menu-text']")
 
